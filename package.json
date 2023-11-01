@@ -9,7 +9,8 @@
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare && husky install",
-		"format": "prettier --write ./src"
+		"format": "prettier --write ./src",
+		"typecheck": "nuxi typecheck"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^18.2.0",

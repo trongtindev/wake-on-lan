@@ -11,6 +11,8 @@
 		"firestore",
 		"firebaseapp",
 		"appspot",
-		"axios"
+		"axios",
+		"nuxi",
+		"typecheck"
 	]
 }
