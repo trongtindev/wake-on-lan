@@ -14,7 +14,11 @@ export default defineEventHandler(async (event) => {
 
 	const body: { mac: string; ipv4: string } = await readBody(event);
 	const result = await admin.messaging().sendToTopic(`wol.${decodedToken.uid}`, {
-		data: body
+		data: body,
+		notification: {
+			title: 'Received command wake',
+			body: `${body.mac} ${body.ipv4}`
+		}
 	});
 
 	return {
