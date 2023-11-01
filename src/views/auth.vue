@@ -11,9 +11,6 @@ const state = ref<'' | 'login'>('');
 const onPressedLogin = () => {
 	state.value = 'login';
 	signInWithPopup(firebase.auth, new GoogleAuthProvider())
-		.then((result) => {
-			console.warn('result', result);
-		})
 		.catch((error) => {
 			alert(error.message ?? error.toString());
 		})

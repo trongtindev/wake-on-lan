@@ -83,15 +83,16 @@ onMounted(() => loadProfiles());
 <template>
 	<div>
 		<v-sheet class="w-100 h-100vh d-flex align-center justify-center">
-			<v-card :width="480">
-				<v-card-title class="text-center"> Wake On Land </v-card-title>
-				<v-card-subtitle class="text-center">
-					Control WOL client
-					<a href="https://github.com/trongtindev/wake-on-lan-client" target="_blank"
-						>Download Client</a
-					>
-				</v-card-subtitle>
-				<v-card-text>
+			<v-sheet :width="480" class="pa-4">
+				<div class="text-center text-h6">Wake On Land</div>
+				<div class="text-center text-grey">
+					Controller WOL client!
+					<a href="https://github.com/trongtindev/wake-on-lan-client/releases" target="_blank">
+						Download Client
+					</a>
+				</div>
+
+				<div class="mt-4">
 					<v-text-field
 						v-model="mac"
 						:disabled="state != ''"
@@ -107,10 +108,9 @@ onMounted(() => loadProfiles());
 						:hide-details="true"
 						variant="outlined"
 					/>
-				</v-card-text>
+				</div>
 
-				<v-divider />
-				<v-card-actions class="d-flex justify-end">
+				<div class="d-flex justify-end mt-4">
 					<v-row>
 						<v-col>
 							<v-btn
@@ -134,8 +134,8 @@ onMounted(() => loadProfiles());
 							/>
 						</v-col>
 					</v-row>
-				</v-card-actions>
-			</v-card>
+				</div>
+			</v-sheet>
 		</v-sheet>
 
 		<v-snackbar v-model="successfully"> Successfully! </v-snackbar>
