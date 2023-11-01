@@ -5,13 +5,13 @@ import { getFirestore } from 'firebase/firestore';
 import { getAnalytics } from 'firebase/analytics';
 
 export const firebaseConfig = {
-	apiKey: 'AIzaSyDAus7LtEmo3fYzAKHM6Yf_f8qqU7rj3eU',
-	authDomain: 'vazo-growth.firebaseapp.com',
-	projectId: 'vazo-growth',
-	storageBucket: 'vazo-growth.appspot.com',
-	messagingSenderId: '90290616083',
-	appId: '1:90290616083:web:3b3aac235d3bb785a04ce6',
-	measurementId: 'G-JP1CCCF5FS'
+	apiKey: 'AIzaSyBK0eHUHxXRdOUDrul4fYA3STCIrPq_nTE',
+	authDomain: 'trongtin-dev.firebaseapp.com',
+	projectId: 'trongtin-dev',
+	storageBucket: 'trongtin-dev.appspot.com',
+	messagingSenderId: '363179202701',
+	appId: '1:363179202701:web:e6387939b5629d95182ac4',
+	measurementId: 'G-484BSMPK9E'
 };
 
 export const useFirebase = defineStore('useFirebase', () => {
