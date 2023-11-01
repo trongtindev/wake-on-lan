@@ -4,12 +4,16 @@
 	"type": "module",
 	"scripts": {
 		"dev": "nuxt dev",
+		"lint": "eslint \"{src,apps,libs,test}/**/*.{ts,vue}\"",
 		"build": "nuxt build",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
+		"postinstall": "nuxt prepare && husky install",
+		"format": "prettier --write ./src"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^18.2.0",
+		"@commitlint/config-conventional": "^18.1.0",
 		"@nuxt/devtools": "latest",
 		"@nuxtjs/eslint-config-typescript": "^12.1.0",
 		"@pinia/nuxt": "^0.5.1",
@@ -17,7 +21,10 @@
 		"eslint": "^8.52.0",
 		"eslint-plugin-nuxt": "^4.0.0",
 		"firebase-admin": "^11.11.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.0.2",
 		"nuxt": "^3.8.0",
+		"prettier": "^3.0.3",
 		"sass": "^1.69.5",
 		"vite-plugin-vuetify": "^1.0.2",
 		"vue": "^3.3.7",
@@ -29,5 +36,12 @@
 		"firebase": "^10.5.2",
 		"pinia": "^2.1.7",
 		"vuetify": "^3.3.23"
+	},
+	"lint-staged": {
+		"*.ts": [
+			"npm run lint",
+			"npm run format",
+			"git add ."
+		]
 	}
 }
