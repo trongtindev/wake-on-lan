@@ -23,8 +23,7 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-${{ runner.os }}-build-${{ runner.os }}-
 
-      - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
-        continue-on-error: true
+      - name: npm install
         run: npm install
 
       - name: npm run lint
