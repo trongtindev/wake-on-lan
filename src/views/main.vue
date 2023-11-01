@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import axios from 'axios';
-import { getDoc, setDoc, doc } from 'firebase/firestore';
+import { getDoc, setDoc, doc, onSnapshot } from 'firebase/firestore';
 
 // uses
 const firebase = useFirebase();
@@ -77,7 +77,16 @@ const cannotWake = computed(() => {
 });
 
 // lifecycle
-onMounted(() => loadProfiles());
+onMounted(() => {
+	loadProfiles();
+	onSnapshot(doc(firebase.firestore, profileRef.value), (document) => {
+		const data = document.data();
+		if (data) {
+			mac.value = data.mac ?? '';
+			ipv4.value = data.ipv4 ?? '';
+		}
+	});
+});
 </script>
 
 <template>

@@ -41,7 +41,8 @@
 		"no-trailing-spaces": 1,
 		"dot-notation": 1,
 		"vue/multiline-html-element-content-newline": 1,
-		"no-multiple-empty-lines": 1
+		"no-multiple-empty-lines": 1,
+		"space-before-blocks": 1
 	},
 	"extends": [
 		"@nuxtjs/eslint-config-typescript",
