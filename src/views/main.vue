@@ -85,7 +85,12 @@ onMounted(() => loadProfiles());
 		<v-sheet class="w-100 h-100vh d-flex align-center justify-center">
 			<v-card :width="480">
 				<v-card-title class="text-center"> Wake On Land </v-card-title>
-				<v-card-subtitle class="text-center">Controller WOL client</v-card-subtitle>
+				<v-card-subtitle class="text-center">
+					Control WOL client
+					<a href="https://github.com/trongtindev/wake-on-lan-client" target="_blank"
+						>Download Client</a
+					>
+				</v-card-subtitle>
 				<v-card-text>
 					<v-text-field
 						v-model="mac"
