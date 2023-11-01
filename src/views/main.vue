@@ -93,7 +93,7 @@ onMounted(() => {
 	<div>
 		<v-sheet class="w-100 h-100vh d-flex align-center justify-center">
 			<v-sheet :width="480" class="pa-4">
-				<div class="text-center text-h6">Wake On Land</div>
+				<div class="text-center text-h6">Wake On Lan</div>
 				<div class="text-center text-grey">
 					Controller WOL client!
 					<a href="https://github.com/trongtindev/wake-on-lan-client/releases" target="_blank">
