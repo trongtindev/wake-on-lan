@@ -1,0 +1,21 @@
+{
+	"regions": [
+		"sin1"
+	],
+	"rewrites": [
+		{
+			"source": "/(.*)",
+			"destination": "/"
+		}
+	],
+	"git": {
+		"deploymentEnabled": {
+			"main": true,
+			"autoAlias": true,
+			"autoJobCancelation": false
+		}
+	},
+	"github": {
+		"enabled": true
+	}
+}
