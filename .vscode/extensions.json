@@ -1,0 +1,32 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "Gruntfuggly.todo-tree",
+    "EditorConfig.EditorConfig",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker",
+    "Zignd.html-css-class-completion"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode-remote.remote-containers",
+    "firefox-devtools.vscode-firefox-debug",
+    "ms-dotnettools.csharp",
+    "ms-edgedevtools.vscode-edge-devtools",
+    "xdebug.php-debug",
+    "donjayamanne.githistory",
+    "felipecaputo.git-project-manager",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "DavidAnson.vscode-markdownlint",
+    "GoogleCloudTools.cloudcode",
+    "eamodio.gitlens",
+    "christian-kohler.npm-intellisense",
+    "ms-mssql.mssql",
+    "mtxr.sqltools",
+    "Oracle.oracledevtools",
+    "DotJoshJohnson.xml",
+    "ms-vscode-remote.remote-wsl",
+    "GitHub.copilot",
+    "GitHub.vscode-pull-request-github"
+  ]
+}
