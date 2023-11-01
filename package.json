@@ -10,7 +10,8 @@
 		"preview": "nuxt preview",
 		"postinstall": "nuxt prepare && husky install",
 		"format": "prettier --write ./src",
-		"typecheck": "nuxi typecheck"
+		"typecheck": "nuxi typecheck",
+		"release": "git checkout release && git merge main && git push && git checkout main"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^18.2.0",
