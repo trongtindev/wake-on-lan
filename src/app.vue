@@ -5,9 +5,14 @@ import MainView from './views/main.vue';
 // uses
 const firebase = useFirebase();
 
-// computed
-const isLoggedIn = computed(() => {
-	return firebase.auth.currentUser != null;
+// states
+const isLoggedIn = ref(false);
+
+// lifecycle
+onMounted(() => {
+	firebase.auth.onAuthStateChanged((user) => {
+		isLoggedIn.value = user != null;
+	});
 });
 </script>
 

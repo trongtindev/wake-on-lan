@@ -36,7 +36,12 @@
 		"comma-spacing": 1,
 		"key-spacing": 1,
 		"n/handle-callback-err": 1,
-		"space-infix-ops": 1
+		"space-infix-ops": 1,
+		"arrow-spacing": 1,
+		"no-trailing-spaces": 1,
+		"dot-notation": 1,
+		"vue/multiline-html-element-content-newline": 1,
+		"no-multiple-empty-lines": 1
 	},
 	"extends": [
 		"@nuxtjs/eslint-config-typescript",

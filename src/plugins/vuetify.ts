@@ -2,7 +2,7 @@
 import { createVuetify } from 'vuetify';
 import { aliases, mdi } from 'vuetify/iconsets/mdi-svg';
 import { VSkeletonLoader } from 'vuetify/labs/components';
-import { md3 } from 'vuetify/blueprints';
+import { md2 } from 'vuetify/blueprints';
 import { en, vi } from 'vuetify/locale';
 
 export default defineNuxtPlugin((nuxtApp) => {
@@ -23,7 +23,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 			fallback: 'en',
 			messages: { en, vi }
 		},
-		blueprint: md3
+		blueprint: md2
 	});
 
 	nuxtApp.vueApp.use(vuetify);
