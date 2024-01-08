@@ -34,7 +34,7 @@
 	},
 	"dependencies": {
 		"@mdi/js": "^7.3.67",
-		"axios": "^1.6.0",
+		"axios": "^1.6.5",
 		"firebase": "^10.5.2",
 		"pinia": "^2.1.7",
 		"vuetify": "^3.3.23"
